@@ -33,71 +33,27 @@ ndarray是齐次多维数组。
 
 `ndarray.shape`
 
+n行m列，shape就是\(n,m\)
 
+shape元组的长度就是维数，ndim
 
-_n_
+`ndarray.size`
 
-rows and
+元素总数量，shape元组所有元素的乘积。
 
-_m_
+`ndarray.dtype`
 
-columns,
+数组元素类型，包括python标准类型和numpy的基本类型。
 
-shape
+`ndarray.itemsize`
 
-will be
+元素的大小，单位bytes，float64就是\(64/8\)=8。
 
-\(n,m\)
+等价ndarray.dtype.itemsize
 
-. The length of the
+object的itemsize是8。
 
-shape
-
-tuple is therefore the rank, or number of dimensions,
-
-ndim
-
-.
-
-ndarray.size
-
-the total number of elements of the array. This is equal to the product of the elements of
-
-shape
-
-.
-
-ndarray.dtype
-
-an object describing the type of the elements in the array. One can create or specify dtype’s using standard Python types. Additionally NumPy provides types of its own. numpy.int32, numpy.int16, and numpy.float64 are some examples.
-
-ndarray.itemsize
-
-the size in bytes of each element of the array. For example, an array of elements of type
-
-float64
-
-has
-
-itemsize
-
-8 \(=64/8\), while one of type
-
-complex32
-
-has
-
-itemsize
-
-4 \(=32/8\). It is equivalent to
-
-ndarray.dtype.itemsize
-
-.
-
-ndarray.data
+`ndarray.data`
 
 the buffer containing the actual elements of the array. Normally, we won’t need to use this attribute because we will access the elements in an array using indexing facilities.
-
-
 
