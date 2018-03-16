@@ -57,7 +57,7 @@ shape元组的长度就是维数，ndim
 
 > 注意下面这个小的例子，在最小元素无法对齐的情况下，向上取能对齐的类型，object。
 >
-> import numpy as np
+> 注意import numpy as np
 
 ```py
 a=np.array([[1,2,3],[4,5,6]])
