@@ -1,6 +1,6 @@
 # Quick Start
 
-`np.array`
+### np.array
 
 用列表初始化
 
@@ -61,11 +61,7 @@ np.empty( (2,3) )
  [  1.39069238e-309   1.39069238e-309   1.39069238e-309]]
 ```
 
-```
-numpy.set_printoptions
-```
+### numpy.set\_printoptions
 
 打印参数，详看[https://docs.scipy.org/doc/numpy/reference/generated/numpy.set\_printoptions.html](https://docs.scipy.org/doc/numpy/reference/generated/numpy.set_printoptions.html)
-
-
 
