@@ -53,5 +53,25 @@ shape元组的长度就是维数，ndim
 
 `ndarray.data`
 
-the buffer containing the actual elements of the array. Normally, we won’t need to use this attribute because we will access the elements in an array using indexing facilities.
+包含数据的缓存。一般用不到，基本都是通过索引访问。
+
+```py
+a=np.array([[1,2,3],[4,5,6]])
+print(a,a.dtype,a.itemsize)
+b=np.array([[1,2,3],[1,2]])
+print(b,b.dtype,b.itemsize)
+c=np.array([1,2,3,5])
+d=np.array([1])
+e=np.array([d,e])
+print(f,f.dtype,f.itemsize)
+```
+
+```
+[[1 2 3]
+ [4 5 6]] int32 4
+[list([1, 2, 3]) list([1, 2])] object 8
+[array([1, 2, 3, 5]) array([1])] object 8
+```
+
+
 
