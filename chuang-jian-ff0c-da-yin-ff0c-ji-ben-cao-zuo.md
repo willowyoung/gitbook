@@ -67,3 +67,5 @@ numpy.set_printoptions
 
 打印参数，详看[https://docs.scipy.org/doc/numpy/reference/generated/numpy.set\_printoptions.html](https://docs.scipy.org/doc/numpy/reference/generated/numpy.set_printoptions.html)
 
+
+
