@@ -47,11 +47,9 @@ shape元组的长度就是维数，ndim
 
 `ndarray.itemsize`
 
-元素的大小，单位bytes，float64就是\(64/8\)=8。
+元素的大小，单位bytes，float64就是\(64/8\)=8。object的itemsize是8。
 
 等价ndarray.dtype.itemsize
-
-object的itemsize是8。
 
 `ndarray.data`
 
