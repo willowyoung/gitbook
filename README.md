@@ -14,3 +14,5 @@ ref：[https://docs.scipy.org/doc/numpy-dev/user/quickstart.html](https://docs.s
 
 Quick Start。来吧。
 
+本书地址：[https://willowyoung.gitbooks.io/numpy/content/](https://willowyoung.gitbooks.io/numpy/content/)
+
