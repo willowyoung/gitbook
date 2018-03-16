@@ -25,5 +25,79 @@ ndarray是齐次多维数组。
 
 索引从\(0,0\)到\(1,2\)
 
+> 推论1：n+1阶数组的元素是n阶数组，n&gt;0。
+
+`ndarray.ndim`
+
+维数，python称阶。
+
+`ndarray.shape`
+
+
+
+_n_
+
+rows and
+
+_m_
+
+columns,
+
+shape
+
+will be
+
+\(n,m\)
+
+. The length of the
+
+shape
+
+tuple is therefore the rank, or number of dimensions,
+
+ndim
+
+.
+
+ndarray.size
+
+the total number of elements of the array. This is equal to the product of the elements of
+
+shape
+
+.
+
+ndarray.dtype
+
+an object describing the type of the elements in the array. One can create or specify dtype’s using standard Python types. Additionally NumPy provides types of its own. numpy.int32, numpy.int16, and numpy.float64 are some examples.
+
+ndarray.itemsize
+
+the size in bytes of each element of the array. For example, an array of elements of type
+
+float64
+
+has
+
+itemsize
+
+8 \(=64/8\), while one of type
+
+complex32
+
+has
+
+itemsize
+
+4 \(=32/8\). It is equivalent to
+
+ndarray.dtype.itemsize
+
+.
+
+ndarray.data
+
+the buffer containing the actual elements of the array. Normally, we won’t need to use this attribute because we will access the elements in an array using indexing facilities.
+
 
 
