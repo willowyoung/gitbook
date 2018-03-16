@@ -1,6 +1,6 @@
 # Quick Start
 
-基本数学运算
+### 基本数学运算
 
 ```py
 a = np.array( [20,30,40,50] )
@@ -57,6 +57,33 @@ print(x.sum())
 0.043625841934
 0.997503092698
 5.59405706677
+```
+
+### reshape和axis
+
+reshape用来输出不同的形状，axis指定要操作的轴
+
+```py
+b = np.arange(12).reshape(3,4)
+print(b)
+print(b.sum(axis=0))                            
+print(b.min(axis=1))                            
+print(b.cumsum(axis=0))    
+print(b.cumsum(axis=1))   
+```
+
+```
+[[ 0  1  2  3]
+ [ 4  5  6  7]
+ [ 8  9 10 11]]
+[12 15 18 21]
+[0 4 8]
+[[ 0  1  2  3]
+ [ 4  6  8 10]
+ [12 15 18 21]]
+[[ 0  1  3  6]
+ [ 4  9 15 22]
+ [ 8 17 27 38]]
 ```
 
 
